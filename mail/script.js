@@ -10,6 +10,7 @@ const emailUser = prompt("Inserisci la tua email")
 //3- Controlla che sia nella lista degli utenti
 let access = false;
 for (let i = 0; i < email.length && access === false; i++) {
+    const emailAccess = email[i]
     if (email[i] === emailUser) {
         access = true;
     }
